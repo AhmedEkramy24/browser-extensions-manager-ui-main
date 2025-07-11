@@ -3,6 +3,7 @@ import Layout from "./Components/Layout/Layout";
 import All from "./Components/All/All";
 import Active from "./Components/Active/Active";
 import InActive from "./Components/InActive/InActive";
+import ExtentionsContextProvider from "./Context/ExtentionsContext";
 
 const router = createHashRouter([
   {
@@ -28,7 +29,9 @@ const router = createHashRouter([
 export default function App() {
   return (
     <>
-      <RouterProvider router={router}></RouterProvider>
+      <ExtentionsContextProvider>
+        <RouterProvider router={router}></RouterProvider>
+      </ExtentionsContextProvider>
     </>
   );
 }
