@@ -5,7 +5,7 @@ import Topbar from "../Topbar/Topbar";
 export default function Layout() {
   return (
     <>
-      <div className="min-h-screen gradiant pt-5">
+      <div className="min-h-screen gradiant pt-5 dark:gradiant-dark">
         <Topbar />
         <Navbar />
         <Outlet></Outlet>

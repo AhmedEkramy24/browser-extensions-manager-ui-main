@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradiant {
-  background-image: linear-gradient(#ebf2fc, #effbf9);
-}
+@layer utilities {
+  .gradiant {
+    background-image: linear-gradient(#ebf2fc, #effbf9);
+  }
 
-.active {
-  @apply bg-[#c8211a] text-white border-[#c8211a];
+  .gradiant-dark {
+    background-image: linear-gradient(#050a1d, #0a1640);
+  }
+
+  .active {
+    @apply bg-[#c8211a] text-white border-[#c8211a];
+  }
 }

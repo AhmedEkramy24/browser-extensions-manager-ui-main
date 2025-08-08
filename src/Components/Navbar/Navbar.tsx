@@ -4,7 +4,9 @@ export default function Navbar() {
   return (
     <>
       <div className="container flex sm:flex-row flex-col sm:justify-between p-2">
-        <h1 className="text-2xl font-bold">Extentions List</h1>
+        <h1 className="text-2xl font-bold text-[#0A1437] dark:text-white">
+          Extentions List
+        </h1>
         <ul className="flex space-x-2">
           <li>
             <NavLink

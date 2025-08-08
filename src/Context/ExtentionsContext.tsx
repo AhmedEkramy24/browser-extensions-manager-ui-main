@@ -12,6 +12,7 @@ interface ExtentionsContextType {
   extentions: Extension[];
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const ExtentionsContext = createContext<ExtentionsContextType>({
   extentions: [],
 });
